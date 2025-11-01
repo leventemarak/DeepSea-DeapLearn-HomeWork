@@ -4,7 +4,7 @@
   - Márton Csáki (Neptun: R0OQD4)
   - Ogleznyev Pável (Neptun: GRKO04)
   - Marák Levente (Neptun: K2DE0K)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeepLearn_HomeWork/blob/main/DeepSea_nagyhf.ipynb.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeepLearn_HomeWork/blob/main/DeepSea_nagyhf.ipynb)
 # Project
   The Airbus Ship Detection Challenge on Kaggle is a computer vision competition that tasks participants with developing models to automatically identify and localize ships in satellite imagery. The goal is to create an algorithm that can accurately draw bounding boxes or pixel-level masks around ships, thereby aiding maritime surveillance and efficiency. This project involves significant work in image segmentation and object detection using machine learning techniques.
 
