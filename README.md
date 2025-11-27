@@ -1,5 +1,5 @@
 # DeepLearning homework
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSea_nagyhf.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSea_HomeWork.ipynb)
 ## Team Deepsea
 ## Members:
   - Márton Csáki (Neptun: R0OQD4)
