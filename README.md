@@ -1,34 +1,49 @@
-# DeepLearning homework
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSea_HomeWork.ipynb)
-## Team Deepsea
-## Members:
-  - Csáki Márton (Neptun: R0OQD4)
-  - Ogleznyev Pável (Neptun: GRKO04)
-  - Marák Levente (Neptun: K2DE0K)
+# Deep Learning Homework - Airbus Ship Detection
 
-# Project
-  The Airbus Ship Detection Challenge on Kaggle is a computer vision competition that tasks participants with developing models to automatically identify and localize ships in satellite imagery. The goal is to create an algorithm that can accurately draw bounding boxes or pixel-level masks around ships, thereby aiding maritime surveillance and efficiency. This project involves significant work in image segmentation and object detection using machine learning techniques.
+## Team Members
+* **[Név 1]** ([Neptun kód])
+* **[Név 2]** ([Neptun kód])
+* **[Név 3]** ([Neptun kód])
 
-## Key Aspects of the Project
-  **Goal:** To automatically detect and localize ships in satellite images.
+## Project Overview
+This project focuses on the semantic segmentation of ships in satellite images using the **Airbus Ship Detection Challenge** dataset. The goal is to accurately locate ships and create segmentation masks, distinguishing them from the open sea, clouds, and coastline. We implemented a deep learning solution using a custom **U-Net** architecture.
 
-  **Data:** A large dataset of high-resolution satellite images provided by Airbus Defence and Space.
+## Key Features
 
-  **Task:** This is primarily an image segmentation challenge, where models must output masks that delineate the exact shape and location of each ship.
+* **Model Architecture:** We designed a custom **U-Net** model from scratch. It features:
+    * **Encoder:** 4 blocks of Convolutional layers with Batch Normalization, Max Pooling, and Dropout for robust feature extraction.
+    * **Decoder:** Transpose Convolutions for upsampling, concatenated with skip connections from the encoder to preserve spatial details.
+    * **Output:** A single-channel Sigmoid activation layer for binary segmentation (ship vs. background).
+* **Smart Preprocessing:**
+    * **Smart Cropping:** Since the original 768x768 images are sparse (mostly empty sea), we implemented a `get_smart_crop` function that prioritizes cropping regions containing ships during training.
+    * **Class Balancing:** We addressed the extreme class imbalance by undersampling empty images, maintaining a specific ratio (e.g., 1:3) between ship-containing and empty images.
+* **Data Augmentation:** To improve generalization, the training generator applies random horizontal/vertical flips and 90-degree rotations.
+* **Custom Loss Function:** We utilized a combined **BCE + Dice Loss** to handle the pixel imbalance inherent in segmentation tasks.
 
-  **Application:** The resulting models have practical applications in maritime security, tracking, and logistics.
+## Dataset
+* **Source:** [Airbus Ship Detection Challenge](https://www.kaggle.com/c/airbus-ship-detection)
+* **Input:** 768x768 RGB satellite images.
+* **Labels:** Run-Length Encoded (RLE) masks provided in a CSV file.
 
+## Repository Structure
+* `Airbus_Ship_Detection.ipynb`: The main Jupyter Notebook containing the full pipeline:
+    * Data loading and RLE decoding.
+    * Data generator with smart cropping and augmentation.
+    * U-Net model definition (`build_unet_improved`).
+    * Training loop with callbacks.
+    * Evaluation and visualization.
 
-## Training and Evaluation
-  To run the testing and evaluation, you need to have the data in your google drive and after it just mount this drive with google colab.
+## Software Environment & Requirements
+To reproduce the results, the following environment is recommended (e.g., Google Colab T4/L4 GPU):
 
-   **Training:** Run the 9. Step to start training.
-   
-   **Evaluation:** Run 10. Step to show evaluation.
+* **Python:** 3.x
+* **Deep Learning Framework:** TensorFlow / Keras
+* **Libraries:**
+    * `pandas`, `numpy` (Data manipulation)
+    * `opencv-python` (Image processing)
+    * `matplotlib` (Visualization)
+    * `scikit-learn` (Train/Val split)
 
-## Results
-  <img width="1227" height="621" alt="image" src="https://github.com/user-attachments/assets/f38919aa-7bfa-4be3-a686-e779e2c16af2" />
-
-  <img width="1335" height="649" alt="image" src="https://github.com/user-attachments/assets/151af7dc-1815-4dbb-b064-5fb4a0b234d9" />
-
-
+### Installation
+```bash
+pip install tensorflow pandas numpy opencv-python matplotlib scikit-learn
