@@ -1,9 +1,9 @@
 # Deep Learning Homework - Airbus Ship Detection
 
 ## Team Members
-* **[Név 1]** ([Neptun kód])
-* **[Név 2]** ([Neptun kód])
-* **[Név 3]** ([Neptun kód])
+* **[Csáki Márton]** ([R0OQD4])
+* **[Marák Levente]** ([K2DE0K])
+* **[Ogleznyev Pável]** ([GRKO04])
 
 ## Project Overview
 This project focuses on the semantic segmentation of ships in satellite images using the **Airbus Ship Detection Challenge** dataset. The goal is to accurately locate ships and create segmentation masks, distinguishing them from the open sea, clouds, and coastline. We implemented a deep learning solution using a custom **U-Net** architecture.
