@@ -46,3 +46,9 @@ To reproduce the results, the following environment is recommended (e.g., Google
 
 ## Running the project
 Run all cells to train and evaluate the model
+
+## Results
+We achieved 80% precision, and 45% val_iou_metric
+<img width="1790" height="989" alt="image" src="https://github.com/user-attachments/assets/cd5b6d06-e814-4a38-9e97-9e089ab43482" />
+<img width="1990" height="2299" alt="image" src="https://github.com/user-attachments/assets/be3c7cd5-a44f-4139-b794-4fc5dc34fac9" />
+
