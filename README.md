@@ -2,7 +2,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSea_HomeWork.ipynb)
 ## Team Deepsea
 ## Members:
-  - Márton Csáki (Neptun: R0OQD4)
+  - Csáki Márton (Neptun: R0OQD4)
   - Ogleznyev Pável (Neptun: GRKO04)
   - Marák Levente (Neptun: K2DE0K)
 
