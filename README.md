@@ -44,5 +44,5 @@ To reproduce the results, the following environment is recommended (e.g., Google
     * `matplotlib` (Visualization)
     * `scikit-learn` (Train/Val split)
 
-##Running the project
+## Running the project
 Run all cells to train and evaluate the model
