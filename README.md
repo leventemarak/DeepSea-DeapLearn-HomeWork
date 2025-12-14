@@ -1,4 +1,4 @@
-# Deep Learning Homework - Airbus Ship Detection
+# Deep Learning Homework - Airbus Ship Detection (Megajánlott jegyért)
 
 ## Team Members
 * **[Csáki Márton]** ([R0OQD4])
