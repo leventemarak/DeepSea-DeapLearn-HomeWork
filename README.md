@@ -20,6 +20,8 @@
 
 
 ## Training and Evaluation
+  To run the testing and evaluation, you need to have the data in your google drive and after it just mount this drive with google colab.
+
    **Training:** Run the 9. Step to start training.
    
    **Evaluation:** Run 10. Step to show evaluation.
