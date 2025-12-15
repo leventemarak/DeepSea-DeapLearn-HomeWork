@@ -1,7 +1,7 @@
 # Deep Learning Homework - Airbus Ship Detection (Megajánlott jegyért)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-https://github.com/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSeaHW.ipynb
+https://colab.research.google.com/github/leventemarak/DeepSea-DeapLearn-HomeWork/blob/main/DeepSeaHW.ipynb
 )
 
 ## Team Members
